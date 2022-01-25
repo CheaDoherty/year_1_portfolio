@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Liam Chea Doherty">
+        <meta name="description" content="Website for a Ski Company">
+        <meta name="Version" content="v1.0">
+        <meta name="Completion_Date" content="15/03/2021">
+
+        <title>Scott's Skis</title>
+
+        <script src="https://kit.fontawesome.com/ee9badcdca.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css" media="screen">
+
+        <link rel="stylesheet" type="text/css" href="./js/jquery-ui.min.css">
+        <script src="./js/jquery-3.6.0.min.js"> </script>
+        <script src="./js/jquery-ui.min.js"> </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                
+                <div class="title">
+                    <img src="./images/Scott'sSkiesTrans1.png" alt="Scott's Skis Logo" title="Scotts Skis logo" width="125" height="125" id="header_logo"/>
+                    <div class="title_text">
+                        <h1>Scotts Skis</h1>
+                        <p>For all your winter needs!</p>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav_link" ><a href="./website.html">Home</a></li>
+                        <li class="nav_link" ><a href="./bookings.html">Bookings</a></li>
+                        <li class="nav_link"><a href="./about_us.html">About Us</a></li>
+                        <li class="nav_link" id="current"><a href="./contact_us.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="booking_content" id="contact_content">
+                <h2>Contact Us</h2>
+                <div class="contact_form">
+                    <div class="booking_form" id="contact_form">
+                        <form>
+                            <div class="contact_details">
+                                <h3>Drop Us A Message</h3>
+                                <div class="booking_field">
+                                    <p>Contact Details: </p>
+                                    <label id="nameIcon" for="firstName"></label>
+                                    <i class="fa fa-user"></i>
+                                    <input class="fullName" type="text" placeholder="Name" name="Name" id="firstName" required>
+                                </div>
+                            
+                                <div class="booking_field">
+                                    <i class="fa fa-envelope"></i>
+                                    <input type="email" id="booking_email" name="email" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                            <div class="date_time">
+                                <div class="booking_field">
+                                    <p>Your Message</p>
+                                    <i class=""></i>
+                                    <textarea name="message" rows="10" cols="80" placeholder="Enter your message here" required></textarea>
+                                </div>
+                            </div>
+                            <div class="activity_book">
+                            </div>
+                            <div class="booking_field">
+                                <input type="submit" class="book_now" name="submitButton" id="bookingSubmit" value="Submit">
+    
+    
+                            </div>
+                            
+    
+                        </form>
+                        <div class="schedule" id="company_contact">
+                            <div class="telphone">
+                                <h3>By Telephone</h3>
+                                <i class="fa fa-phone"></i>
+                                <p>028-3939-2295</p>
+                            </div>
+                            <div class="contact_email">
+                                <h3>By Email</h3>
+                                <i class="fa fa-envelope"></i>
+                                <p>enquiries@scottsskis.com</p>
+                            </div>
+                            <div class="office">
+                                <h3>Our Offices</h3>
+                                <i class="fa fa-building"></i>
+                                <p>
+                                    65 Hillyroad <br>
+                                    Dunnywood <br>
+                                    BT38 8AX <br>
+                                    County Fox
+                                </p>
+                            </div>
+                            <div class="social">
+                                <h3>Our Social</h3>
+                                <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook" id="facebook"></i>
+                                </a>
+                                <a href="https://www.twitter.com/">
+                                <i class="fab fa-twitter" id="twitter"></i>
+                                </a>
+                                <br>
+                                <a href="https://www.instagram.com/">
+                                <i class="fab fa-instagram" id="instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/">
+                                <i class="fab fa-youtube" id="youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <footer>
+                <div class="copyright">
+                    <i class="far fa-copyright"></i>
+                    <p>Copyright 2021</p>
+                </div>
+            </footer>
+        </div>
+    
+        
+
+    </body>
+</html>

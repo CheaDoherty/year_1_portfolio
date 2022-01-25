@@ -1,0 +1,1 @@
+Lecturer name: Joe Bloggs Course name: Computer science Total Num Of Students Enrolled: 19 Percentage of male students: 47.368421052631575% Percentage of female students: 52.63157894736842%

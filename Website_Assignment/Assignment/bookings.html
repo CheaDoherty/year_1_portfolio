@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Liam Chea Doherty">
+        <meta name="description" content="Website for a Ski Company">
+        <meta name="Version" content="v1.0">
+        <meta name="Completion_Date" content="15/03/2021">
+
+        <title>Scott's Skis</title>
+
+        <script src="https://kit.fontawesome.com/ee9badcdca.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css" media="screen">
+
+        <link rel="stylesheet" type="text/css" href="./js/jquery-ui.min.css">
+        <script src="./js/jquery-3.6.0.min.js"> </script>
+        <script src="./js/jquery-ui.min.js"> </script>
+
+        
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                
+                <div class="title">
+                    <img src="./images/Scott'sSkiesTrans1.png" alt="Scott's Skis Logo" title="Scotts Skis logo" width="125" height="125" id="header_logo"/>
+                    <div class="title_text">
+                        <h1>Scotts Skis</h1>
+                        <p>For all your winter needs!</p>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li class="nav_link" ><a href="./website.html">Home</a></li>
+                        <li class="nav_link" id="current"><a href="./bookings.html">Bookings</a></li>
+                        <li class="nav_link"><a href="./about_us.html">About Us</a></li>
+                        <li class="nav_link"><a href="./contact_us.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="booking_content">
+                <h2>Book Your Adventure Now</h2>
+                <div class="booking_form">
+                    <form>
+                        <div class="contact_details">
+                            <h3>Your Details</h3>
+                            <div class="booking_field">
+                                <p>Contact Details: </p>
+                                <label id="nameIcon" for="firstName"></label>
+                                <i class="fa fa-user"></i>
+                                <input class="fullName" type="text" placeholder="Name" name="Name" id="firstName" required>
+                            </div>
+                            
+                            <div class="booking_field">
+                                <i class="fa fa-phone"></i>
+                                <input type="tel" id=contact_num name="phone" placeholder="Contact Number" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+                                <p class="format">Format: 123-1234-1234</p>
+                            </div>
+                            <div class="booking_field">
+                                <i class="fa fa-envelope"></i>
+                                <input type="email" id="booking_email" name="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="date_time">
+                            <div class="booking_field">
+                                <p>Booking Date & Time</p>
+                                <i class="fa fa-calendar"></i>
+                                <input id="datepick" type="text" size="8" placeholder="DD/MM/YYYY" required>
+                                <script>
+                                    $("#datepick").datepicker({
+                                        minDate:new Date(),
+
+                                        beforeShowDay: function(currentDay){
+                                            return [currentDay.getDay() == 3 || currentDay.getDay() == 0 ? false : true]
+                                        ;}
+                                    });
+                                </script>
+                                
+                                <i class="fa fa-clock-o"></i>
+                                <select id="book_time" name="time">
+                                    <option>08:00</option>
+                                    <option>09:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>16:00</option>
+                                    <option>17:00</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+                        <div class="activity_book">
+                            <div class="booking_field">
+                                <p>Select Activity</p>
+                                
+                                <i>&#9975;</i>
+                                <select id="select_activity" name="activity_sel">
+                                    <option>Ski Slopes</option>
+                                    <option>Team Building</option>
+                                    <option>Ski Training</option>
+                                    <option>Ice Skating</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="booking_field">
+                            <input type="submit" class="book_now" name="submitButton" id="bookingSubmit" value="Submit">
+
+
+                        </div>
+                        
+
+                    </form>
+                    <div class="schedule">
+                        <h3>Opening Times</h3>
+                        <div class="open_times">
+                            <p><b>Monday</b>: 08:00 - 18:00 </p>
+                            <p><b>Tuesday</b>: 08:00 - 18:00</p>
+                            <p class="closed">Wednesday: CLOSED</p>
+                            <p><b>Thursday</b>: 08:00 - 18:00</p>
+                            <p><b>Friday</b>: 08:00 - 18:00</p>
+                            <p><b>Saturday</b>: 08:00 - 18:00</p>
+                            <p class="closed">Sunday: CLOSED</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <footer>
+                <div class="copyright">
+                    <i class="far fa-copyright"></i>
+                    <p>Copyright 2021</p>
+                </div>
+            </footer>
+        </div>
+    
+        
+
+    </body>
+</html>
